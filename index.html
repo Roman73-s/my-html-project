@@ -111,7 +111,7 @@
     <label>
       ФИО:<br>
       <input type="text" name="fio" class ="form-imput" 
-        pattern="[А-Яя-яЁёA-Za-z\s\-]{2,}"
+        pattern="[А-Яя-яЁёA-Za-z\s-]{2,}"
         title = "Только буквы, пробелы и дефисы"
         required>
     </label>
@@ -120,7 +120,7 @@
     <label>
       Телефон:<br>
       <input type="tel" name="phone" 
-        pattern="[\d\+\-\(\)\s]{10,}"
+        pattern="[\d+\-()\s]{10,}"
         title = "Только цифры, +, -, (, ), пробел"
         autocomplete="off"
         required>
@@ -135,7 +135,8 @@
 
     <label>
       Дата рождения:<br>
-      <input type="date" name="birth" required>
+      <input type="date" name="birth" class = "form-input"
+        max = "2026-12-31" required>
     </label>
     <br>
 
