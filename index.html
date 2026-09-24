@@ -111,7 +111,7 @@
     <label>
       ФИО:<br>
       <input type="text" name="fio" class="form-input" 
-        pattern="^[A-Za-zА-Яа-яЁё\s-]+$"
+        pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
         title = "Только буквы, пробелы и дефисы"
         required>
     </label>
@@ -120,7 +120,7 @@
     <label>
       Телефон:<br>
       <input type="tel" name="phone" 
-        pattern="^[\d+()\s-]{10,}$"
+        pattern="^[\d+\(\)\s\-]{10,}$"
         title = "Только цифры, +, -, (, ), пробел"
         autocomplete="off"
         required>
